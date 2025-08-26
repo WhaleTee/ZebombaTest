@@ -1,0 +1,96 @@
+:root {
+}
+
+.play-button {
+    align-self: stretch;
+    font-size: 60px;
+    transition-timing-function: ease-out;
+    transition-duration: 0.1s;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    flex-grow: 1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.play-button:hover {
+    background-color: rgb(229, 229, 229);
+    scale: 1.05 1.05;
+}
+
+.play-button:active {
+    background-color: rgb(204, 204, 204);
+}
+
+.play-button:disabled {
+}
+
+.play-button-group {
+    left: -100%;
+    transition-duration: 0.35s;
+    transition-timing-function: ease-in;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-between;
+    align-items: stretch;
+    position: absolute;
+    top: 0;
+}
+
+.play-button-group--in {
+    left: 0%;
+    top: 0;
+}
+
+.global-container {
+    flex-grow: 1;
+    transition-duration: 0.35s;
+}
+
+.global-container--shadowed {
+    background-color: rgba(0, 0, 0, 0.31);
+}
+
+.game-over-button-group {
+    left: 100%;
+    transition-duration: 0.35s;
+    transition-timing-function: ease-in;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-between;
+    align-items: stretch;
+    position: absolute;
+    top: 0;
+}
+
+.game-over-button-group--in {
+    left: 0%;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-cubic;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-between;
+    align-items: stretch;
+    position: absolute;
+    top: 0;
+}
+
+.game-over-label-group {
+    flex-grow: 1;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+    align-self: center;
+    align-content: center;
+    top: 0;
+    left: 105%;
+    bottom: 0;
+    right: 0;
+}
+
+.game-over-label-group--in {
+    left: 0%;
+    justify-content: center;
+}
